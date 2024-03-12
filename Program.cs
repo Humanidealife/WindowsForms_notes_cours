@@ -16,7 +16,7 @@ namespace WindowsForms_notes_cours
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MonForm());
         }
     }
 }
