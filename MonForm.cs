@@ -27,7 +27,12 @@ namespace WindowsForms_notes_cours
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("C'est le deuxième bouton, bonne pioche !");
+            //label1.Text = textBox1.Text;
+            string[] tableau = textBox1.Lines;
+            foreach (string item in tableau)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

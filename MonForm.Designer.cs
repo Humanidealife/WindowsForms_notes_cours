@@ -31,12 +31,13 @@
             this.buttonTest_1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonTest_1
             // 
             this.buttonTest_1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTest_1.Location = new System.Drawing.Point(242, 332);
+            this.buttonTest_1.Location = new System.Drawing.Point(183, 306);
             this.buttonTest_1.Name = "buttonTest_1";
             this.buttonTest_1.Size = new System.Drawing.Size(187, 74);
             this.buttonTest_1.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(654, 332);
+            this.button1.Location = new System.Drawing.Point(674, 336);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(235, 56);
             this.button1.TabIndex = 1;
@@ -60,24 +61,36 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(171, 43);
+            this.label1.Location = new System.Drawing.Point(183, 184);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(657, 208);
+            this.label1.Size = new System.Drawing.Size(647, 70);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ceci est mon premier Label";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(362, 37);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(325, 98);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "Nom";
             // 
             // MonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1003, 466);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonTest_1);
             this.Name = "MonForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -86,6 +99,7 @@
         private System.Windows.Forms.Button buttonTest_1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
