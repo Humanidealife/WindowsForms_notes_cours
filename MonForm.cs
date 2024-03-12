@@ -19,7 +19,10 @@ namespace WindowsForms_notes_cours
 
         private void buttonTest_1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Code exécuté, cette fois c'est la bonne !");
+            string str1 = "Ceci est mon premier bouton";
+            label1.Text = str1;
+            label1.ForeColor = Color.Coral;
+            label1.BackColor = Color.DarkBlue;
         }
 
         private void button1_Click(object sender, EventArgs e)
