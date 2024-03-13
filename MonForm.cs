@@ -98,5 +98,19 @@ namespace WindowsForms_notes_cours
             label4.Text = numericUpDown1.Value.ToString();
             numericUpDown1.Value = 42;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //label5.Text = dateTimePicker1.Value.ToString();
+            dateTimePicker1.MinDate = new DateTime(2014, 01, 31);
+            dateTimePicker1.MaxDate = new DateTime(2222, 12, 31);
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime date = dateTimePicker1.Value;
+            label5.Text = date.ToString("d");
+            //label5.Text = dateTimePicker1.Value.ToString();
+        }
     }
 }
