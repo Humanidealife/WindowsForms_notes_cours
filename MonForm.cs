@@ -89,5 +89,14 @@ namespace WindowsForms_notes_cours
             label3.Text = comboBox1.Items[2].ToString();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            numericUpDown1.Maximum = 80;
+            numericUpDown1.Minimum = -55;
+            numericUpDown1.Increment = 7;
+            label4.Text = numericUpDown1.Value.ToString();
+            numericUpDown1.Value = 42;
+        }
     }
 }
