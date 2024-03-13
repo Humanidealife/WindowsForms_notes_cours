@@ -12,9 +12,12 @@ namespace WindowsForms_notes_cours
 {
     public partial class MonForm : Form
     {
+        int sec = 0;
+        bool activation = false;
         public MonForm()
         {
             InitializeComponent();
+            //timer1.Stop();
         }
 
         private void buttonTest_1_Click(object sender, EventArgs e)
@@ -33,6 +36,24 @@ namespace WindowsForms_notes_cours
             {
                 Console.WriteLine(item);
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            sec++;
+            label2.Text = sec.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //timer1.Start();
+            activation = !activation;
+            timer1.Enabled = activation;
         }
     }
 }
