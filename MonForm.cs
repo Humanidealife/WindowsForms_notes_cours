@@ -17,6 +17,7 @@ namespace WindowsForms_notes_cours
         public MonForm()
         {
             InitializeComponent();
+            LoadItems();
             //timer1.Stop();
         }
 
@@ -111,6 +112,56 @@ namespace WindowsForms_notes_cours
             DateTime date = dateTimePicker1.Value;
             label5.Text = date.ToString("d");
             //label5.Text = dateTimePicker1.Value.ToString();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //listBox1.Items.Add(textBox3.Text);
+            //listBox1.Items.Remove("Ligne : 5");
+            //listBox1.Items.RemoveAt(0);
+
+            //label6.Text = listBox1.Items.Count.ToString();
+
+            //listBox1.Items.Insert(0, "Nouvelle Ligne");
+            //listBox1.Items.Clear();
+            //string[] tableau1 = { "A", "B", "C" };
+            //listBox1.Items.AddRange(tableau1);
+
+            //label6.Text = listBox1.Items.IndexOf("Ligne : 3").ToString();
+
+            //On dimensionne le tableau avec la longeur de listBox1
+            //string[] tableau2 = new string[listBox1.Items.Count];
+            //Onn copie les élements de listBox1 dans le tableau
+            //listBox1.Items.CopyTo(tableau2, 0);
+
+            //foreach (string item in tableau2)
+            //{
+            //   label6.Text += item + "\n";
+            //}
+
+            //listBox1.SetSelected(2, true);
+            Console.WriteLine("-------------------------------");
+
+            foreach (var item in listBox1.SelectedItems)
+            {
+                Console.WriteLine(item);
+            }
+
+
+        }
+
+        private void LoadItems()
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                listBox1.Items.Add("Ligne : " + i);
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //label6.Text = listBox1.SelectedItem.ToString();
+            //label6.Text = listBox1.SelectedIndex.ToString();
         }
     }
 }
