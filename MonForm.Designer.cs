@@ -51,6 +51,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -256,16 +259,39 @@
             this.listBox1.Location = new System.Drawing.Point(833, 26);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listBox1.Size = new System.Drawing.Size(112, 132);
             this.listBox1.TabIndex = 20;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(527, 309);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(387, 22);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "label7";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(530, 339);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(384, 23);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 22;
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // MonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 466);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox3);
@@ -319,6 +345,9 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

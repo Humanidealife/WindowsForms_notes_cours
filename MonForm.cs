@@ -14,6 +14,7 @@ namespace WindowsForms_notes_cours
     {
         int sec = 0;
         bool activation = false;
+        int progress = 0;
         public MonForm()
         {
             InitializeComponent();
@@ -140,11 +141,11 @@ namespace WindowsForms_notes_cours
             //}
 
             //listBox1.SetSelected(2, true);
-            Console.WriteLine("-------------------------------");
-
+            //Console.WriteLine("-------------------------------");
+            label6.Text = "";
             foreach (var item in listBox1.SelectedItems)
             {
-                Console.WriteLine(item);
+                label6.Text += " " + item + "\n";
             }
 
 
@@ -162,6 +163,27 @@ namespace WindowsForms_notes_cours
         {
             //label6.Text = listBox1.SelectedItem.ToString();
             //label6.Text = listBox1.SelectedIndex.ToString();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            progress++;
+            if(progress <= progressBar1.Maximum)
+            {
+                progressBar1.Value = progress;
+                label7.Text = progressBar1.Value + "/" + progressBar1.Maximum;
+            }
+
+            if (progressBar1.Value >70)
+            {
+                progressBar1.ForeColor = Color.Coral;
+            }
+
+            if (progressBar1.Value >90)
+            {
+                progressBar1.ForeColor = Color.Red;
+            }
+
         }
     }
 }
