@@ -55,5 +55,39 @@ namespace WindowsForms_notes_cours
             activation = !activation;
             timer1.Enabled = activation;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            /*comboBox1.Items.Add(textBox2.Text);
+            comboBox1.Items.Add("Elément 1");
+            comboBox1.Items.Add("Elément 2");
+            comboBox1.Items.Add("Elément 3");
+            comboBox1.Items.Add("Elément 4");*/
+            comboBox1.Sorted = true;
+            string[] tab = { "Brice", "Anna", "Zoe", "Cédric" };
+            comboBox1.Items.AddRange(tab);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //comboBox1.Items.Clear();
+            //comboBox1.Items.RemoveAt(1);
+            //comboBox1.Items.Remove("Elément 2");
+            /*label3.Text = comboBox1.Items.Count.ToString();
+
+            if(comboBox1.Items.Contains("Elément 1"))
+            {
+                label2.Text = " cet élément est bien dans la comboBox";
+            }
+            else
+            {
+                label2.Text = "cet élément n'est pas dans la comboBox";
+            }
+
+            label3.Text = comboBox1.SelectedIndex.ToString();
+            label3.Text = comboBox1.SelectedItem.ToString();*/
+            label3.Text = comboBox1.Items[2].ToString();
+
+        }
     }
 }
