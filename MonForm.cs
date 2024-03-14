@@ -200,10 +200,21 @@ namespace WindowsForms_notes_cours
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked) label8.Text = radioButton1.Text;
-            if (radioButton2.Checked) label8.Text = radioButton2.Text;
-            if (radioButton3.Checked) label8.Text = radioButton3.Text;
+            //if (radioButton1.Checked) label8.Text = radioButton1.Text;
+            //if (radioButton2.Checked) label8.Text = radioButton2.Text;
+            //if (radioButton3.Checked) label8.Text = radioButton3.Text;
+            //lié avec la fonction isChecked
+            label8.Text = isChecked(groupBox1);
         }
-
+        //une méthode (fonction) qui renvoie le nom du bouton qui a été checké dans le groupe de boutons
+        string isChecked(Control container)
+        {
+            foreach(var item in container.Controls)
+            {
+                RadioButton rb = item as RadioButton;
+                if (rb.Checked) return rb.Text;
+            }
+            return null;
+        }
     }
 }
