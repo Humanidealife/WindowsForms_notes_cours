@@ -16,11 +16,13 @@ namespace WindowsForms_notes_cours
         bool activation = false;
         int progress = 0;
         
+        
         public MonForm()
         {
             InitializeComponent();
             LoadItems();
             radioButton2.Checked = true;
+              
             //timer1.Stop();
         }
 
@@ -203,7 +205,8 @@ namespace WindowsForms_notes_cours
             //if (radioButton1.Checked) label8.Text = radioButton1.Text;
             //if (radioButton2.Checked) label8.Text = radioButton2.Text;
             //if (radioButton3.Checked) label8.Text = radioButton3.Text;
-            //lié avec la fonction isChecked
+            //!!cette façon est plus automatique et dynamique que d'écrire une ligne de code par bouton
+            //lié avec la fonction isChecked.
             label8.Text = isChecked(groupBox1);
         }
         //une méthode (fonction) qui renvoie le nom du bouton qui a été checké dans le groupe de boutons
@@ -215,6 +218,40 @@ namespace WindowsForms_notes_cours
                 if (rb.Checked) return rb.Text;
             }
             return null;
+        }
+
+        
+        private void button9_Click(object sender, EventArgs e)
+        {
+            //une façon pas dynamique
+            /*List<string> ListeLangages = new List<string>();
+            label9.Text = "";
+            if (checkBox1.Checked) ListeLangages.Add(checkBox1.Text);
+            if (checkBox2.Checked) ListeLangages.Add(checkBox2.Text);
+            if (checkBox3.Checked) ListeLangages.Add(checkBox3.Text);
+            if (checkBox4.Checked) ListeLangages.Add(checkBox4.Text);
+
+            foreach (var item in ListeLangages)
+            {
+                label9.Text += item + "\n";
+            }*/
+            //une façon dynamique avvec la focntion isChecked2
+            /*label9.Text = "";
+            label9.Text = isChecked2(groupBox2);*/
+
+            label9.Text = checkBox2.CheckState.ToString();
+
+        }
+
+        string isChecked2(Control container)
+        {
+            string str = null;
+            foreach (var item in container.Controls)
+            {
+                CheckBox cb = item as CheckBox;
+                if (cb.Checked) str += cb.Text + "\n";
+            }
+            return str;
         }
     }
 }

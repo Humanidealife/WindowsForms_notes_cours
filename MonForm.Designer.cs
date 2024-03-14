@@ -62,8 +62,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonTest_1
@@ -91,11 +99,11 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(322, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(490, 103);
+            this.label1.Size = new System.Drawing.Size(225, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ceci est mon premier label";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,7 +192,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(506, 160);
+            this.numericUpDown1.Location = new System.Drawing.Point(505, 59);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(179, 49);
             this.numericUpDown1.TabIndex = 11;
@@ -192,7 +200,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(503, 127);
+            this.label4.Location = new System.Drawing.Point(553, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 16);
             this.label4.TabIndex = 12;
@@ -200,7 +208,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(520, 248);
+            this.button5.Location = new System.Drawing.Point(505, 114);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 13;
@@ -210,7 +218,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(702, 192);
+            this.button6.Location = new System.Drawing.Point(523, 210);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 14;
@@ -221,7 +229,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(699, 127);
+            this.label5.Location = new System.Drawing.Point(520, 159);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 15;
@@ -229,7 +237,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(691, 164);
+            this.dateTimePicker1.Location = new System.Drawing.Point(523, 181);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 22);
             this.dateTimePicker1.TabIndex = 16;
@@ -238,7 +246,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(967, 26);
+            this.label6.Location = new System.Drawing.Point(857, 31);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 16);
             this.label6.TabIndex = 17;
@@ -246,7 +254,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(951, 59);
+            this.textBox3.Location = new System.Drawing.Point(860, 59);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 22);
             this.textBox3.TabIndex = 18;
@@ -254,7 +262,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(970, 104);
+            this.button7.Location = new System.Drawing.Point(860, 102);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 19;
@@ -266,7 +274,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(833, 26);
+            this.listBox1.Location = new System.Drawing.Point(724, 38);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
@@ -276,7 +284,7 @@
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(188, 351);
+            this.label7.Location = new System.Drawing.Point(12, 354);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(387, 22);
             this.label7.TabIndex = 21;
@@ -284,7 +292,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(191, 382);
+            this.progressBar1.Location = new System.Drawing.Point(18, 391);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(384, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -297,7 +305,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(616, 378);
+            this.button8.Location = new System.Drawing.Point(523, 382);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(161, 27);
             this.button8.TabIndex = 23;
@@ -308,7 +316,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(644, 224);
+            this.label8.Location = new System.Drawing.Point(520, 236);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 16);
             this.label8.TabIndex = 24;
@@ -317,7 +325,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 21);
+            this.radioButton1.Location = new System.Drawing.Point(6, 21);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(109, 20);
             this.radioButton1.TabIndex = 25;
@@ -352,7 +360,7 @@
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Location = new System.Drawing.Point(647, 252);
+            this.groupBox1.Location = new System.Drawing.Point(524, 256);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(112, 120);
             this.groupBox1.TabIndex = 28;
@@ -362,7 +370,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(796, 312);
+            this.radioButton4.Location = new System.Drawing.Point(437, 352);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(81, 20);
             this.radioButton4.TabIndex = 29;
@@ -373,7 +381,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(796, 340);
+            this.radioButton5.Location = new System.Drawing.Point(442, 382);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(75, 20);
             this.radioButton5.TabIndex = 30;
@@ -381,11 +389,87 @@
             this.radioButton5.Text = "Féminin";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(906, 137);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "label9";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.checkBox4);
+            this.groupBox2.Controls.Add(this.checkBox3);
+            this.groupBox2.Controls.Add(this.checkBox2);
+            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Location = new System.Drawing.Point(667, 224);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(234, 148);
+            this.groupBox2.TabIndex = 32;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Langage de programmation";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(700, 381);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 33;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(16, 21);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(45, 20);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "C#";
+            this.checkBox1.ThreeState = true;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(16, 47);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(70, 20);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Python";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(16, 74);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(61, 20);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Ruby";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(16, 100);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(59, 20);
+            this.checkBox4.TabIndex = 3;
+            this.checkBox4.Text = "Java";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
             // MonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 466);
+            this.ClientSize = new System.Drawing.Size(1093, 466);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.groupBox1);
@@ -420,6 +504,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,6 +546,13 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 
