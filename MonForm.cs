@@ -15,10 +15,12 @@ namespace WindowsForms_notes_cours
         int sec = 0;
         bool activation = false;
         int progress = 0;
+        
         public MonForm()
         {
             InitializeComponent();
             LoadItems();
+            radioButton2.Checked = true;
             //timer1.Stop();
         }
 
@@ -184,6 +186,23 @@ namespace WindowsForms_notes_cours
                 progressBar1.ForeColor = Color.Red;
             }
 
+        }
+
+        private void MonForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked) label8.Text = radioButton1.Text;
+            if (radioButton2.Checked) label8.Text = radioButton2.Text;
+            if (radioButton3.Checked) label8.Text = radioButton3.Text;
         }
     }
 }
