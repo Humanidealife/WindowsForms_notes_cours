@@ -69,6 +69,9 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -310,6 +313,7 @@
             this.button8.Size = new System.Drawing.Size(161, 27);
             this.button8.TabIndex = 23;
             this.button8.Text = "Valider le choix";
+            this.toolTip1.SetToolTip(this.button8, "Ce bouton permet de valider votre choix");
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -418,6 +422,7 @@
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 33;
             this.button9.Text = "button9";
+            this.toolTip2.SetToolTip(this.button9, "Vous pouvez en choisir plusieurs");
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -429,7 +434,6 @@
             this.checkBox1.Size = new System.Drawing.Size(45, 20);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "C#";
-            this.checkBox1.ThreeState = true;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -462,11 +466,31 @@
             this.checkBox4.Text = "Java";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(920, 199);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(111, 66);
+            this.button10.TabIndex = 34;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip1.ToolTipTitle = "Bouton";
+            // 
+            // toolTip2
+            // 
+            this.toolTip2.IsBalloon = true;
+            this.toolTip2.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            // 
             // MonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 466);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label9);
@@ -553,6 +577,9 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
 
