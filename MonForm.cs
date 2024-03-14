@@ -204,5 +204,6 @@ namespace WindowsForms_notes_cours
             if (radioButton2.Checked) label8.Text = radioButton2.Text;
             if (radioButton3.Checked) label8.Text = radioButton3.Text;
         }
+
     }
 }
