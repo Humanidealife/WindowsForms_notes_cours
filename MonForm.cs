@@ -325,5 +325,6 @@ namespace WindowsForms_notes_cours
             listView2.Items.Add("11", 3);
             listView2.Items.Add("15", 1);
         }
+
     }
 }
