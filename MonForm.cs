@@ -314,5 +314,16 @@ namespace WindowsForms_notes_cours
         {
             listView1.Items.Remove(listView1.SelectedItems[0]);
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            //listView2.View = View.SmallIcon;
+            listView2.LargeImageList = imageList1;
+            listView2.View = View.LargeIcon;
+            listView2.Items.Add("0", 0);
+            listView2.Items.Add("9", 2);
+            listView2.Items.Add("11", 3);
+            listView2.Items.Add("15", 1);
+        }
     }
 }

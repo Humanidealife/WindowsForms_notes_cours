@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MonForm));
             this.buttonTest_1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,6 +89,10 @@
             this.button12 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -611,7 +616,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(232, 715);
+            this.button11.Location = new System.Drawing.Point(232, 728);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(132, 32);
             this.button11.TabIndex = 44;
@@ -621,7 +626,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(386, 715);
+            this.button12.Location = new System.Drawing.Point(386, 728);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(132, 32);
             this.button12.TabIndex = 45;
@@ -633,7 +638,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(828, 559);
+            this.label14.Location = new System.Drawing.Point(235, 686);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(92, 29);
             this.label14.TabIndex = 46;
@@ -641,7 +646,7 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(552, 715);
+            this.button13.Location = new System.Drawing.Point(556, 728);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(132, 32);
             this.button13.TabIndex = 47;
@@ -649,11 +654,50 @@
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(875, 778);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 48;
+            this.button14.Text = "button14";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4});
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(12, 778);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(812, 163);
+            this.listView2.SmallImageList = this.imageList1;
+            this.listView2.TabIndex = 49;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "0");
+            this.imageList1.Images.SetKeyName(1, "9");
+            this.imageList1.Images.SetKeyName(2, "11");
+            this.imageList1.Images.SetKeyName(3, "15");
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Snack";
+            this.columnHeader4.Width = 600;
+            // 
             // MonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 788);
+            this.ClientSize = new System.Drawing.Size(1133, 1055);
+            this.Controls.Add(this.listView2);
+            this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.button12);
@@ -774,6 +818,10 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
 
