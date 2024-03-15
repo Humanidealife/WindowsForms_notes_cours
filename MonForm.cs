@@ -267,5 +267,19 @@ namespace WindowsForms_notes_cours
             trackBar1.Value += 10;
             label10.Text = "Volume : " + trackBar1.Value;
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            string initiale = textBox4.Text;
+            string nom = textBox5.Text;
+            string prenom = textBox6.Text;
+
+            ListViewItem item = new ListViewItem(initiale);
+            //ListViewItem item = new ListViewItem(new string[] { initiale, nom, preom});
+            item.SubItems.Add(nom);
+            item.SubItems.Add(prenom);
+
+            listView1.Items.Add(item);
+        }
     }
 }
