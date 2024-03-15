@@ -759,7 +759,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonTest_1);
             this.Name = "MonForm";
-            this.Text = "Form1";
+            this.Text = "git s";
             this.Load += new System.EventHandler(this.MonForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
