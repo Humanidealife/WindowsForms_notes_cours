@@ -276,10 +276,29 @@ namespace WindowsForms_notes_cours
 
             ListViewItem item = new ListViewItem(initiale);
             //ListViewItem item = new ListViewItem(new string[] { initiale, nom, preom});
+            //Ou encore
+            //ListViewItem item = new ListViewItem();
+            //item.Text = initiale;
             item.SubItems.Add(nom);
             item.SubItems.Add(prenom);
 
             listView1.Items.Add(item);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            /*label14.Text = listView1.Items[0].Text + " " +
+                listView1.Items[0].SubItems[1].Text + " " +
+                listView1.Items[0].SubItems[2].Text;*/
+            label14.Text = "";
+            foreach (ListViewItem itemRow in listView1.Items)
+            {
+                for (int i = 0; i < itemRow.SubItems.Count; i++)
+                {
+                    string str = itemRow.SubItems[i].Text;
+                    label14.Text += str + " ";
+                }
+            }
         }
     }
 }
