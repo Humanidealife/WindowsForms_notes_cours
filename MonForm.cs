@@ -22,7 +22,9 @@ namespace WindowsForms_notes_cours
             InitializeComponent();
             LoadItems();
             radioButton2.Checked = true;
-              
+            button10.Text = "Augmenter 10";
+            label10.Text = "Volume : " + trackBar1.Value;
+
             //timer1.Stop();
         }
 
@@ -252,6 +254,18 @@ namespace WindowsForms_notes_cours
                 if (cb.Checked) str += cb.Text + "\n";
             }
             return str;
+        }
+        
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+           
+            label10.Text ="Volume : " + trackBar1.Value;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            trackBar1.Value += 10;
+            label10.Text = "Volume : " + trackBar1.Value;
         }
     }
 }
