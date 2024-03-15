@@ -290,7 +290,7 @@ namespace WindowsForms_notes_cours
             /*label14.Text = listView1.Items[0].Text + " " +
                 listView1.Items[0].SubItems[1].Text + " " +
                 listView1.Items[0].SubItems[2].Text;*/
-            label14.Text = "";
+            /*label14.Text = "";
             foreach (ListViewItem itemRow in listView1.Items)
             {
                 for (int i = 0; i < itemRow.SubItems.Count; i++)
@@ -298,7 +298,21 @@ namespace WindowsForms_notes_cours
                     string str = itemRow.SubItems[i].Text;
                     label14.Text += str + " ";
                 }
+            }*/
+            label14.Text = "";
+            ListView.SelectedListViewItemCollection selection = listView1.SelectedItems;
+
+            foreach (ListViewItem item in selection)
+            {
+                label14.Text += item.Text + " " + item.SubItems[1].Text + " " + item.SubItems[2].Text;
             }
+
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Remove(listView1.SelectedItems[0]);
         }
     }
 }
